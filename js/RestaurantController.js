@@ -1,6 +1,7 @@
 restaurantList.controller("RestaurantCtrl", function($scope){
   $scope.restaurants = [];
   // $scope.radio = '';
+    $scope.query = '';
   $scope.addRestaurant = function(){
     $scope.restaurants.push({name: $scope.restaurantName,
                              cuisine: $scope.cuisine,
@@ -15,5 +16,6 @@ restaurantList.controller("RestaurantCtrl", function($scope){
     var index = $scope.restaurants.indexOf(restaurant);
     $scope.restaurants.splice(index, 1);
   };
+
 
 });

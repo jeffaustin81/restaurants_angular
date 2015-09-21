@@ -14,10 +14,10 @@
           <form class="form-inline" role="form">
             <div class="form-group">
               <input ng-model="query[radio]" type="text" class="form-control" placeholder="Search">
-              <input type="radio" ng-model="radio" value="name">Name
-              <input type="radio" ng-model="radio" value="cuisine">cuisine
-              <input type="radio" ng-model="radio" value="location">location
-              <input type="radio" ng-model="radio" value="priceRange">price
+              <input type="radio" ng-click="query = ''" ng-model="radio" value="name">name
+              <input type="radio" ng-click="query = ''" ng-model="radio" value="cuisine">cuisine
+              <input type="radio" ng-click="query = ''" ng-model="radio" value="location">location
+              <input type="radio" ng-click="query = ''" ng-model="radio" value="priceRange">price
 
             </div>
           </form>
@@ -27,7 +27,7 @@
         <div class="col-md-12">
           <h2 ng-show="restaurants.length && filtered.length">Restaurant List</h2>
           <h2 ng-show="restaurants.length && !filtered.length">No Matches</h2>
-          <ul>{{radio}}
+          <ul>
               <li ng-repeat="item in filtered = (restaurants | filter: query )">
               <span ng-click="editing = true">
               {{item.name}}
