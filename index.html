@@ -1,3 +1,4 @@
+<!doctype html>
 <html ng-app='restaurantList'>
   <head>
     <title>Best Restaurants</title>
@@ -13,12 +14,27 @@
           <h4>Search Restaurants</h4>
           <form class="form-inline" role="form">
             <div class="form-group">
-              <input ng-model="query[radio]" type="text" class="form-control" placeholder="Search">
-              <input type="radio" ng-click="query = ''" ng-model="radio" value="name">name
-              <input type="radio" ng-click="query = ''" ng-model="radio" value="cuisine">cuisine
-              <input type="radio" ng-click="query = ''" ng-model="radio" value="location">location
-              <input type="radio" ng-click="query = ''" ng-model="radio" value="priceRange">price
-
+            <div class="checkbox">
+              <input ng-model="query[searchby]" type="text" class="form-control" placeholder="Search">
+              </div>
+              <select ng-model="searchby" class="form-control">
+                <option value="name">Search By Name</option>
+                <option value="cuisine" >Search By Cuisine</option>
+                <option value="location" >Search By Location</option>
+                <option value="priceRange" >Search By Price</option>
+              </select>
+             <!--  <div class="checkbox">
+              <input type="radio" ng-click="query = ''" ng-model="searchby" value="name"> name
+              </div>
+              <div class="checkbox">
+              <input type="radio" ng-click="query = ''" ng-model="searchby" value="cuisine"> cuisine
+              </div>
+              <div class="checkbox">
+              <input type="radio" ng-click="query = ''" ng-model="searchby" value="location"> location
+              </div>
+              <div class="checkbox">
+              <input type="radio" ng-click="query = ''" ng-model="searchby" value="priceRange"> price
+              </div> -->
             </div>
           </form>
         </div>

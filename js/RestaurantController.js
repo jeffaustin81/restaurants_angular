@@ -1,7 +1,7 @@
 restaurantList.controller("RestaurantCtrl", function($scope){
   $scope.restaurants = [];
   // $scope.radio = '';
-    $scope.query = '';
+    // $scope.query = '';
   $scope.addRestaurant = function(){
     $scope.restaurants.push({name: $scope.restaurantName,
                              cuisine: $scope.cuisine,
