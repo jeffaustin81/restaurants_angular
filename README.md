@@ -2,7 +2,7 @@
 
 ##### _Restaurant search and post application, 9/21/15_
 
-#### By _**Jeff Austin**_
+#### By _**Jeff Austin & Christopher Calascione**_
 
 ## Description
 
@@ -22,7 +22,7 @@ _JavaScript, Angular_
 
 ### Legal
 
-Copyright (c) 2015 **_Jeff Austin_**
+Copyright (c) 2015 **_Jeff Austin & Christopher Calascione_**
 
 This software is licensed under the MIT license.
 
